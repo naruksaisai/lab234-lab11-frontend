@@ -12,9 +12,9 @@ install:
 - npm install
 - npm run ng-deploy
 - ls -l
-- docker build -t saksit32/se234-lab10-client .
-- docker push saksit32/se234-lab10-client
+
 script: 
-- docker-compose -H "$DOCKER_HOST" up -d
+- docker build -t saksit32/se234-lab11-frontend .
+- docker push saksit32/se234-lab11-frontend
 
 service: docker
